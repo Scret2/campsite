@@ -161,7 +161,7 @@ header {
   top: 10%; /*headerブロックに対して上からの配置指定*/
 }
 .home #logo img {
-  width: 350px; /*ロゴ画像の幅*/
+  width: 200px; /*ロゴ画像の幅*/
 }
 
 /*画面幅500px以下の追加指定*/
@@ -353,7 +353,7 @@ header {
 #menubar nav a {
   padding: 1rem; /*メニュー内の余白*/
   margin: 1rem; /*メニューの外側の余白*/
-  background: var(--primary-color); /*背景色。css冒頭で指定しているテーマカラーを読み込みます*/
+  background-color: #ff8c00;
   color: #fff; /*文字色*/
   border-radius: 50px; /*角を丸くする指定*/
 }
@@ -1154,3 +1154,8 @@ footer .pr {
     display: block;
   }
 } /*追加指定ここまで*/
+
+/*書き足したコード*/
+#logo p {
+  color: #fff;
+}
