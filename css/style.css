@@ -146,6 +146,7 @@ header {
   display: flex; /*flexを使う指定*/
   align-items: center; /*垂直揃えの指定。天地中央に配置されるように。*/
   padding-left: 3%; /*左側に空ける余白*/
+  color: #fff;
 }
 #logo img {
   display: block;
@@ -464,7 +465,6 @@ main h3 {
   font-size: 1.2rem; /*文字サイズ*/
   margin: 0 0 2rem; /*h3の外側にとるスペース。上、左右、下への順番。*/
   padding: 7px 2rem; /*h3内の余白。上下、左右への順番。*/
-  background: #eee; /*背景色*/
   border-radius: 30px; /*角を丸くする指定。ある程度大きければ適当でいいです。*/
 }
 
@@ -905,7 +905,10 @@ footer .pr {
 .new dd {
   width: calc(100% - 8em); /*「8em」は上の「.new dt」のwidthの値です*/
 }
-
+.new dd img {
+  width: 300px;
+  height: 200px;
+}
 /*画面幅900px以上の追加指定*/
 @media screen and (min-width: 900px) {
   /*日付(dt)設定*/
@@ -1156,6 +1159,28 @@ footer .pr {
 } /*追加指定ここまで*/
 
 /*書き足したコード*/
-#logo p {
-  color: #fff;
+.About {
+  width: 50%;
+  margin-left: 50px;
+}
+.About h2 {
+  background-color: #006acd;
+  color: #fff; /*文字色*/
+  margin: 0 0 2rem; /*h2の外側にとるスペース。上、左右、下への順番。*/
+  font-size: 1.3rem; /*文字サイズ*/
+  padding: 7px 2rem; /*h2内の余白。上下、左右への順番。*/
+  border-radius: 30px; /*角を丸くする指定。ある程度大きければ適当でいいです。*/
+  display: flex; /*flexを使う指定*/
+  justify-content: space-between; /*並びかたの種類の指定*/
+  align-items: center; /*垂直揃えの指定。天地中央に配置されるように。*/
+}
+.About h3 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700; /* 太字にする */
+}
+.About_top {
+  width: 500px;
+}
+.About_top p {
+  font-weight: normal;
 }
