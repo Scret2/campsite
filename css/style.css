@@ -1160,12 +1160,26 @@ footer .pr {
 
 /*書き足したコード*/
 .About {
-  width: 50%;
   margin-left: 50px;
+  margin-bottom: 100px;
+  display: flex;
 }
-.About h2 {
-  background-color: #006acd;
-  color: #fff; /*文字色*/
+.Site {
+  margin-left: 50px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.activity {
+  margin-left: 50px;
+  display: flex;
+}
+.About h2,
+.Site h2,
+.activity h2 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700; /* 太字にする */
+  background-color: #fff;
+  color: #581c1c; /*文字色*/
   margin: 0 0 2rem; /*h2の外側にとるスペース。上、左右、下への順番。*/
   font-size: 1.3rem; /*文字サイズ*/
   padding: 7px 2rem; /*h2内の余白。上下、左右への順番。*/
@@ -1174,13 +1188,39 @@ footer .pr {
   justify-content: space-between; /*並びかたの種類の指定*/
   align-items: center; /*垂直揃えの指定。天地中央に配置されるように。*/
 }
-.About h3 {
+.About h3,
+.Site h3,
+.activity h3 {
   font-family: "Cabin", sans-serif;
   font-weight: 700; /* 太字にする */
 }
-.About_top {
-  width: 500px;
+.About_top,
+.Site_top,
+.activity_top {
+  width: 70%;
 }
-.About_top p {
+.About_top p,
+.Site_top p,
+.activity_top p {
   font-weight: normal;
+}
+.figurearea {
+  margin-top: 300px;
+  width: 55%;
+}
+.figurearea img {
+  width: 900px;
+}
+.figure-contents {
+  display: flex;
+  margin-bottom: 100px;
+  margin-left: 50px;
+}
+.figurearea_2 {
+  margin-top: 50px;
+  width: 70%;
+}
+.figurearea_3 {
+  margin-top: 400px;
+  width: 55%;
 }
