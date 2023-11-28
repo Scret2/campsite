@@ -1173,9 +1173,13 @@ footer .pr {
   margin-left: 50px;
   display: flex;
 }
+.Facility {
+  margin-left: 50px;
+}
 .About h2,
 .Site h2,
-.activity h2 {
+.activity h2,
+.Facility h2 {
   font-family: "Cabin", sans-serif;
   font-weight: 700; /* 太字にする */
   background-color: #fff;
@@ -1190,18 +1194,21 @@ footer .pr {
 }
 .About h3,
 .Site h3,
-.activity h3 {
+.activity h3,
+.Facility h3 {
   font-family: "Cabin", sans-serif;
   font-weight: 700; /* 太字にする */
 }
 .About_top,
 .Site_top,
-.activity_top {
+.activity_top,
+.Facility_top {
   width: 70%;
 }
 .About_top p,
 .Site_top p,
-.activity_top p {
+.activity_top p,
+.Facility p {
   font-weight: normal;
 }
 .figurearea {
@@ -1221,6 +1228,10 @@ footer .pr {
   width: 70%;
 }
 .figurearea_3 {
-  margin-top: 400px;
+  margin-top: 450px;
   width: 55%;
+}
+
+.img-flex {
+  display: flex;
 }
