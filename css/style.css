@@ -857,24 +857,6 @@ footer .pr {
   margin: 0 auto 1rem; /*ブロック要素を中央に配置。下に1文字分のマージンをとる。*/
 }
 
-/*サムネイル全体を囲むブロック*/
-.thumbnail {
-  display: flex; /*flexを使う指定*/
-  justify-content: center; /*並びかたの種類の指定。これはセンタリングする指定。*/
-  margin-bottom: 2rem; /*下に空けるスペース。２文字分。*/
-}
-
-/*サムネイル画像*/
-.thumbnail img {
-  width: 100px; /*サムネイルの幅*/
-  margin: 2px; /*サムネイル間のスペース*/
-  cursor: pointer; /*リンクタグではないが、クリックできる事をわかりやすくする為にリンクと同じポインターにしておきます。*/
-  transition: 0.3s; /*マウスオンまでにかける時間。3秒。*/
-}
-.thumbnail img:hover {
-  opacity: 0.8; /*マウスオン時に80%だけ色を出す。つまり薄くなります。*/
-}
-
 /*「お知らせ」ブロック
 ---------------------------------------------------------------------------*/
 /*お知らせブロック*/
@@ -1187,7 +1169,6 @@ footer .pr {
   margin: 0 0 2rem; /*h2の外側にとるスペース。上、左右、下への順番。*/
   font-size: 1.3rem; /*文字サイズ*/
   padding: 7px 2rem; /*h2内の余白。上下、左右への順番。*/
-  border-radius: 30px; /*角を丸くする指定。ある程度大きければ適当でいいです。*/
   display: flex; /*flexを使う指定*/
   justify-content: space-between; /*並びかたの種類の指定*/
   align-items: center; /*垂直揃えの指定。天地中央に配置されるように。*/
@@ -1234,4 +1215,35 @@ footer .pr {
 
 .img-flex {
   display: flex;
+  margin-top: 16px;
+}
+.img-flex_2 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+span p {
+  font-size: 24px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-left: 0;
+  border: solid 2px #e8c59c;
+  padding: 8px 24px 8px 24px;
+  display: inline-block;
+}
+.headertxt {
+  text-align: right;
+}
+
+.headertxt h3 {
+  font-size: 24px;
+  margin: 0;
+  padding: 32px 16px 32px 16px;
+  border: 2px solid #37a34a;
+  color: #37a34a;
+  border-radius: 3px;
+  margin-left: 8px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: inline-block;
 }
